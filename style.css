@@ -263,8 +263,7 @@ footer {
     font-size: 0.8rem; 
     color: #555; 
     letter-spacing: 1px;
-}font-size: 0.7rem; color: #555; }
-/* --- MOBILE RESPONSIVENESS --- */
+}font-size: 0.7rem; color: #555; }/* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
     /* 1. Stack Navigation */
     nav {
@@ -284,6 +283,9 @@ footer {
     }
 
     /* 2. Shrink Hero Text & Stack Buttons */
+    .hero {
+        padding-top: 160px; /* Pushes the content down below the tall mobile menu */
+    }
     .hero-content h1 {
         font-size: 2.5rem;
     }

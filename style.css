@@ -182,11 +182,13 @@ nav {
     object-fit: cover;
     margin-bottom: 1.5rem;
     transition: filter 0.4s ease;
-    filter: brightness(0.8); 
+    /* Moody default state for Services only */
+    filter: grayscale(100%) brightness(0.9); 
 }
 
+/* Restores color and brightness on hover ONLY for services images */
 .card:hover .card-img {
-    filter: brightness(1.1); 
+    filter: grayscale(0%) brightness(1.1); 
 }
 
 .card h3 {
@@ -290,6 +292,7 @@ nav {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    /* Static, clean images here. No filters, no transition. */
 }
 
 .roster-card h4 {

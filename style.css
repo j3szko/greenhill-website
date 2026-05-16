@@ -165,12 +165,15 @@ nav {
     background: #111;
     padding: 2rem;
     border: 1px solid #222;
-    transition: transform 0.3s, border-color 0.3s;
+    border-top: 3px solid #222; 
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    border-color: var(--highlight);
+    transform: translateY(-10px); 
+    border-color: #333;
+    border-top: 3px solid var(--highlight); 
+    box-shadow: 0 15px 30px rgba(30, 215, 96, 0.08); 
 }
 
 .card-img {
@@ -178,6 +181,12 @@ nav {
     height: 200px;
     object-fit: cover;
     margin-bottom: 1.5rem;
+    transition: filter 0.4s ease;
+    filter: brightness(0.8); 
+}
+
+.card:hover .card-img {
+    filter: brightness(1.1); 
 }
 
 .card h3 {
@@ -281,13 +290,6 @@ nav {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    transition: transform 0.4s ease, filter 0.4s ease;
-    filter: grayscale(100%);
-}
-
-.roster-card img:hover {
-    transform: scale(1.03);
-    filter: grayscale(0%);
 }
 
 .roster-card h4 {
